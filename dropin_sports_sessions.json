@@ -1,0 +1,57 @@
+[
+  {
+    "program": "Badminton",
+    "sessions": [
+      {
+        "details": "Sat 5:30pm-7:00pm AGES: 18+ 7:00pm-10:00pm Wednedays & Saturdays AGES 13+ 5:30pm-7:00pm Wednesdays & Saturdays Starting Nov. 5,  through March 4, 5:30pm Wednesday session ends and 7:00pm Wedcnesday  session will begin at 7:30pm LOCATION: Town Building Gym, 41 Cochituate Road",
+        "capacity": "24",
+        "open": "24",
+        "fee": "$ 8.00",
+        "sign_up_action": "GotoSlotRegistration('17091', 'L', '24', 'R')"
+      },
+      {
+        "details": "Sat 7:00pm-10:00pm AGES: 18+ 7:00pm-10:00pm Wednedays & Saturdays AGES 13+ 5:30pm-7:00pm Wednesdays & Saturdays Starting Nov. 5,  through March 4, 5:30pm Wednesday session ends and 7:00pm Wedcnesday  session will begin at 7:30pm LOCATION: Town Building Gym, 41 Cochituate Road",
+        "capacity": "24",
+        "open": "24",
+        "fee": "$ 8.00",
+        "sign_up_action": "GotoSlotRegistration('16630', 'L', '24', 'R')"
+      }
+    ]
+  },
+  {
+    "program": "Basketball",
+    "sessions": [
+      {
+        "details": "Mon 6:00pm-8:00pm No commitments, just buckets! Whether you're here to shoot around, run full-court, or just show off your crossover, our drop-in basketball sessions are all about fun, fitness, and friendly competition. Grab your sneakers, and ball. Lets Hoop!",
+        "capacity": "12",
+        "open": "12",
+        "fee": "$ 8.00",
+        "sign_up_action": ""
+      }
+    ]
+  },
+  {
+    "program": "Drop-In Cricket WRCC",
+    "sessions": [
+      {
+        "details": "Sat 3:00pm-5:30pm",
+        "capacity": "15",
+        "open": "15",
+        "fee": "$ 8.00",
+        "sign_up_action": "GotoSlotRegistration('17062', 'L', '15', 'R')"
+      }
+    ]
+  },
+  {
+    "program": "Volleyball",
+    "sessions": [
+      {
+        "details": "Fri 12:00pm-2:00pm Ages: 18+ Sundays & Thursdays All welcome! Beginners too! Fridays Women Only*  - Women's height net used.  Intermediate/Advanced level. Location: Town Building Gym, 41 Cochituate Road",
+        "capacity": "12",
+        "open": "6",
+        "fee": "$ 8.00",
+        "sign_up_action": ""
+      }
+    ]
+  }
+]
