@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Boston Area Drop-In Adult Sports Finder</title>
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f8fd; margin: 0; }
+    .container { max-width: 1080px; margin: auto; padding: 2em 1em;}
+    h1 { color: #1d2951; text-align: center; font-size: 2.5em; margin-bottom: 0.3em;}
+    .filters { display: flex; flex-wrap: wrap; gap: 1em; margin-bottom: 1.8em; justify-content: center;}
+    .filter-group { display: flex; flex-direction: column; }
+    .filter-group label { font-weight: 600; color: #1d2951; margin-bottom: 0.2em;}
+    .filter-group input, .filter-group select {
+      padding: 0.45em 1em;
+      border-radius: 5px;
+      border: 1.5px solid #d6dbe5;
+      font-size: 1em;
+      margin-bottom: 0.2em;
+    }
+    .sports-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+      gap: 1.5em; }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 18px #aec6e34d;
+      padding: 1em 1.1em 1.2em 1.1em;
+      border-left: 5px solid #4476e9;
+      display: flex;
+      flex-direction: column;
+      min-height: 200px;
+    }
+    .card-header {font-size: 1.15em; color: #1857bb; font-weight:700; margin-bottom: 0.35em;}
+    .card-town { font-size: 1em; color: #2b3843; margin-bottom: 0.2em;}
+    .card-details { font-size: 0.97em; color: #455060; margin-bottom: 0.32em; }
+    .card-extra { font-size: 0.97em; color: #7c8195;}
+    .card-row { display: flex; gap: 1em; font-size:0.95em;}
+    .card-fee { font-weight:700; color:#079657;}
+    .signup-link {
+      margin-top:0.6em;
+      display:inline-block;
+      background:#1d86d9;
+      color:#fff;
+      padding:0.47em 1.3em;
+      border-radius:6px;
+      font-weight:600;
+      text-decoration:none;
+      letter-spacing:0.01em;
+      transition:background .17s;
+      box-shadow:0 2px 10px #1d295108;
+      font-size:1em;
+    }
+    .signup-link:hover { background:#114f95;}
+    .empty { text-align:center; color:#888; font-size:1.14em; margin-top:2.5em;}
+    @media (max-width:600px){
+      .filters{flex-direction:column;}
+      .sports-grid{grid-template-columns:1fr;}
+      h1{font-size:1.45em;}
+      .container{padding:1em;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Boston Area Drop-In Adult Sports Finder</h1>
+    <div class="filters">
+      <div class="filter-group">
+        <label for="townFilter">Town:</label>
+        <select id="townFilter">
+          <option value="">All</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="zipFilter">Zipcode:</label>
+        <input id="zipFilter" type="text" placeholder="Partial/Full e.g. 01778">
+      </div>
+      <div class="filter-group">
+        <label for="dayFilter">Day of Week:</label>
+        <select id="dayFilter">
+          <option value="">All</option>
+          <option>Monday</option><option>Tuesday</option><option>Wednesday</option>
+          <option>Thursday</option><option>Friday</option>
+          <option>Saturday</option><option>Sunday</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="maxCostFilter">Max Cost ($):</label>
+        <input id="maxCostFilter" type="number" min="0" placeholder="Any">
+      </div>
+      <div class="filter-group">
+        <label for="searchFilter">Keyword:</label>
+        <input id="searchFilter" type="text" placeholder="Sport, Gym, etc.">
+      </div>
+    </div>
+    <div id="results" class="sports-grid"></div>
+    <div id="emptyMsg" class="empty" style="display:none">No sessions match your filters.</div>
+  </div>
+  <script>
+    let allSessions = [];
+    let towns = [];
+    function extractZip(details) {
+      // Look for a 5-digit zip in details/description.
+      const match = details.match(/\b\d{5}\b/);
+      return match ? match[0] : "";
+    }
+    function extractDay(details, date){
+      // Try to extract day from details or date string
+      if(date){
+        const dt = new Date(date);
+        if(String(dt) !== "Invalid Date") return dt.toLocaleDateString('en-US', {weekday:'long'});
+      }
+      const days = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+      for(const day of days) if(details && details.toLowerCase().includes(day.toLowerCase())) return day;
+      return "";
+    }
+    function extractFee(feeStr){
+      if(!feeStr) return null;
+      let match = feeStr.match(/(\d+(\.\d+)?)/);
+      return match ? parseFloat(match[1]) : null;
+    }
+    function filterSessions() {
+      const town = document.getElementById("townFilter").value;
+      const zip = document.getElementById("zipFilter").value.trim();
+      const day = document.getElementById("dayFilter").value;
+      const maxCost = parseFloat(document.getElementById("maxCostFilter").value);
+      const keyword = document.getElementById("searchFilter").value.trim().toLowerCase();
+
+      let filtered = allSessions.filter(sess => {
+        if(town && sess.town !== town) return false;
+        if(zip && extractZip(sess.details) !== zip && extractZip(sess.details) !== sess.zipcode) return false;
+        if(day && extractDay(sess.details, sess.date) !== day) return false;
+        if(maxCost && extractFee(sess.fee) !== null && extractFee(sess.fee) > maxCost) return false;
+        if(keyword && !(
+           sess.program.toLowerCase().includes(keyword) ||
+           (sess.details && sess.details.toLowerCase().includes(keyword)) ||
+           (sess.town && sess.town.toLowerCase().includes(keyword)))) return false;
+        return true;
+      });
+      renderSessions(filtered);
+    }
+    function renderSessions(sessions) {
+      let results = document.getElementById("results");
+      let emptyMsg = document.getElementById("emptyMsg");
+      if(sessions.length === 0) {
+        results.innerHTML = "";
+        emptyMsg.style.display = "";
+        return;
+      } else {
+        emptyMsg.style.display = "none";
+      }
+      results.innerHTML = sessions.map(sess => `
+        <div class="card">
+          <div class="card-header">${sess.program}</div>
+          <div class="card-town">${sess.town}${sess.zipcode ? " (" + sess.zipcode + ")" : ""}</div>
+          <div class="card-details"><b>Date:</b> ${sess.date ? sess.date : "TBD"}</div>
+          <div class="card-details">${sess.details ? sess.details.replace(/\n/g,"<br>") : ""}</div>
+          <div class="card-row">
+            ${sess.fee ? `<span class="card-fee"><b>Fee:</b> $${extractFee(sess.fee)}</span>` : ""}
+            ${sess.capacity ? `<span><b>Cap.:</b> ${sess.capacity}</span>` : ""}
+            ${sess.open ? `<span><b>Open:</b> ${sess.open}</span>` : ""}
+          </div>
+          ${sess.signup_link ? `<a class="signup-link" href="${sess.signup_link}" target="_blank">Sign Up</a>` : ""}
+        </div>
+      `).join("");
+    }
+    fetch('all_towns_sports_sessions.json').then(r=>r.json()).then(data=>{
+      // Add "zipcode" to each session for Zip filter
+      allSessions = data.map(sess=>{
+        const zip = extractZip(sess.details);
+        return {...sess, zipcode: zip};
+      });
+      // Populate unique towns
+      towns = [...new Set(allSessions.map(s=>s.town).filter(Boolean))].sort();
+      const townSel = document.getElementById("townFilter");
+      towns.forEach(t=>{let o=document.createElement("option");o.value=o.text=t;townSel.appendChild(o);});
+      // Set up filters
+      ["townFilter","zipFilter","dayFilter","maxCostFilter","searchFilter"].forEach(id=>{
+        document.getElementById(id).addEventListener("input", filterSessions);
+        document.getElementById(id).addEventListener("change", filterSessions);
+      });
+      renderSessions(allSessions);
+    });
+  </script>
+</body>
+</html>
