@@ -5,10 +5,10 @@
   <title>Drop-In Sports Sessions</title>
   <style>
     body { font-family: Arial, sans-serif; margin:2rem; }
-    select, input[type="text"] { margin: 1em 0.5em 1em 0; font-size:1em; }
+    select { margin: 1em 0.5em 1em 0; font-size:1em; }
     .session-block { border: 1px solid #e0e0e0; border-radius: 8px; margin: 1em 0; padding: 1em;}
-    .session-header { font-weight: bold; margin-bottom: 0.6em; }
-    .session-detail { margin-bottom: 0.2em; }
+    .session-header { font-weight: bold; margin-bottom: 0.6em; font-size: 1.1em; }
+    .session-detail { margin-bottom: 0.3em; }
     .signup-link { margin-top: 0.5em; }
     .empty { color: #999; font-style: italic; }
   </style>
@@ -27,7 +27,6 @@
     let data = [];
     let programs = [];
 
-    // Utility to safely encode HTML
     function htmlEncode(str) {
       return String(str).replace(/[&<>"']/g, c =>
         ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -46,7 +45,7 @@
           for (const sess of prog.sessions) {
             html += `<div class="session-block">`
               + `<div class="session-header">${htmlEncode(sess.date)}</div>`
-              + `<div class="session-detail">${htmlEncode(sess.details).replace(/\n/g,'<br>')}</div>`
+              + `<div class="session-detail"><b>Date:</b> ${htmlEncode(sess.date)}<br>${htmlEncode(sess.details).replace(/\n/g,'<br>')}</div>`
               + `<div class="session-detail"><b>Capacity:</b> ${htmlEncode(sess.capacity)}</div>`
               + `<div class="session-detail"><b>Open:</b> ${htmlEncode(sess.open)}</div>`
               + `<div class="session-detail"><b>Fee:</b> ${htmlEncode(sess.fee)}</div>`
