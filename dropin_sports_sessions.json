@@ -1,56 +1,766 @@
 [
   {
     "program": "Badminton",
+    "leagueid": "2273",
     "sessions": [
       {
-        "details": "Sat 5:30pm-7:00pm AGES: 18+ 7:00pm-10:00pm Wednedays & Saturdays AGES 13+ 5:30pm-7:00pm Wednesdays & Saturdays Starting Nov. 5,  through March 4, 5:30pm Wednesday session ends and 7:00pm Wedcnesday  session will begin at 7:30pm LOCATION: Town Building Gym, 41 Cochituate Road",
+        "date": "11/08/2025",
+        "details": "Sat 5:30pm-7:00pm\nAGES: 18+ 7:00pm-10:00pm Wednedays & Saturdays\nAGES 13+ 5:30pm-7:00pm Wednesdays & Saturdays\nStarting Nov. 5,  through March 4, 5:30pm Wednesday session ends and 7:00pm Wedcnesday  session will begin at 7:30pm\nLOCATION: Town Building Gym, 41 Cochituate Road",
         "capacity": "24",
         "open": "24",
         "fee": "$ 8.00",
-        "sign_up_action": "GotoSlotRegistration('17091', 'L', '24', 'R')"
+        "signup_link": "#"
       },
       {
-        "details": "Sat 7:00pm-10:00pm AGES: 18+ 7:00pm-10:00pm Wednedays & Saturdays AGES 13+ 5:30pm-7:00pm Wednesdays & Saturdays Starting Nov. 5,  through March 4, 5:30pm Wednesday session ends and 7:00pm Wedcnesday  session will begin at 7:30pm LOCATION: Town Building Gym, 41 Cochituate Road",
+        "date": "11/08/2025",
+        "details": "Sat 7:00pm-10:00pm\nAGES: 18+ 7:00pm-10:00pm Wednedays & Saturdays\nAGES 13+ 5:30pm-7:00pm Wednesdays & Saturdays\nStarting Nov. 5,  through March 4, 5:30pm Wednesday session ends and 7:00pm Wedcnesday  session will begin at 7:30pm\nLOCATION: Town Building Gym, 41 Cochituate Road",
+        "capacity": "24",
+        "open": "20",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "11/12/2025",
+        "details": "Wed 7:30pm-10:00pm\nAGES: 18+ 7:00pm-10:00pm Wednedays & Saturdays\nAGES 13+ 5:30pm-7:00pm Wednesdays & Saturdays\nStarting Nov. 5,  through March 4, 5:30pm Wednesday session ends and 7:00pm Wedcnesday  session will begin at 7:30pm\nLOCATION: Town Building Gym, 41 Cochituate Road",
+        "capacity": "24",
+        "open": "23",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "11/15/2025",
+        "details": "Sat 5:30pm-7:00pm\nAGES: 18+ 7:00pm-10:00pm Wednedays & Saturdays\nAGES 13+ 5:30pm-7:00pm Wednesdays & Saturdays\nStarting Nov. 5,  through March 4, 5:30pm Wednesday session ends and 7:00pm Wedcnesday  session will begin at 7:30pm\nLOCATION: Town Building Gym, 41 Cochituate Road",
         "capacity": "24",
         "open": "24",
         "fee": "$ 8.00",
-        "sign_up_action": "GotoSlotRegistration('16630', 'L', '24', 'R')"
+        "signup_link": "#"
+      },
+      {
+        "date": "11/15/2025",
+        "details": "Sat 7:00pm-10:00pm\nAGES: 18+ 7:00pm-10:00pm Wednedays & Saturdays\nAGES 13+ 5:30pm-7:00pm Wednesdays & Saturdays\nStarting Nov. 5,  through March 4, 5:30pm Wednesday session ends and 7:00pm Wedcnesday  session will begin at 7:30pm\nLOCATION: Town Building Gym, 41 Cochituate Road",
+        "capacity": "24",
+        "open": "24",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "11/19/2025",
+        "details": "Wed 7:30pm-10:00pm\nAGES: 18+ 7:00pm-10:00pm Wednedays & Saturdays\nAGES 13+ 5:30pm-7:00pm Wednesdays & Saturdays\nStarting Nov. 5,  through March 4, 5:30pm Wednesday session ends and 7:00pm Wedcnesday  session will begin at 7:30pm\nLOCATION: Town Building Gym, 41 Cochituate Road",
+        "capacity": "24",
+        "open": "23",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "11/22/2025",
+        "details": "Sat 5:30pm-7:00pm\nAGES: 18+ 7:00pm-10:00pm Wednedays & Saturdays\nAGES 13+ 5:30pm-7:00pm Wednesdays & Saturdays\nStarting Nov. 5,  through March 4, 5:30pm Wednesday session ends and 7:00pm Wedcnesday  session will begin at 7:30pm\nLOCATION: Town Building Gym, 41 Cochituate Road",
+        "capacity": "24",
+        "open": "24",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "11/22/2025",
+        "details": "Sat 7:00pm-10:00pm\nAGES: 18+ 7:00pm-10:00pm Wednedays & Saturdays\nAGES 13+ 5:30pm-7:00pm Wednesdays & Saturdays\nStarting Nov. 5,  through March 4, 5:30pm Wednesday session ends and 7:00pm Wedcnesday  session will begin at 7:30pm\nLOCATION: Town Building Gym, 41 Cochituate Road",
+        "capacity": "24",
+        "open": "23",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "11/26/2025",
+        "details": "Wed 7:30pm-10:00pm\nAGES: 18+ 7:00pm-10:00pm Wednedays & Saturdays\nAGES 13+ 5:30pm-7:00pm Wednesdays & Saturdays\nStarting Nov. 5,  through March 4, 5:30pm Wednesday session ends and 7:00pm Wedcnesday  session will begin at 7:30pm\nLOCATION: Town Building Gym, 41 Cochituate Road",
+        "capacity": "24",
+        "open": "23",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "11/29/2025",
+        "details": "Sat 5:30pm-7:00pm\nAGES: 18+ 7:00pm-10:00pm Wednedays & Saturdays\nAGES 13+ 5:30pm-7:00pm Wednesdays & Saturdays\nStarting Nov. 5,  through March 4, 5:30pm Wednesday session ends and 7:00pm Wedcnesday  session will begin at 7:30pm\nLOCATION: Town Building Gym, 41 Cochituate Road",
+        "capacity": "24",
+        "open": "24",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "11/29/2025",
+        "details": "Sat 7:00pm-10:00pm\nAGES: 18+ 7:00pm-10:00pm Wednedays & Saturdays\nAGES 13+ 5:30pm-7:00pm Wednesdays & Saturdays\nStarting Nov. 5,  through March 4, 5:30pm Wednesday session ends and 7:00pm Wedcnesday  session will begin at 7:30pm\nLOCATION: Town Building Gym, 41 Cochituate Road",
+        "capacity": "24",
+        "open": "23",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "12/03/2025",
+        "details": "Wed 7:30pm-10:00pm\nAGES: 18+ 7:00pm-10:00pm Wednedays & Saturdays\nAGES 13+ 5:30pm-7:00pm Wednesdays & Saturdays\nStarting Nov. 5,  through March 4, 5:30pm Wednesday session ends and 7:00pm Wedcnesday  session will begin at 7:30pm\nLOCATION: Town Building Gym, 41 Cochituate Road",
+        "capacity": "24",
+        "open": "24",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "12/06/2025",
+        "details": "Sat 5:30pm-7:00pm\nAGES: 18+ 7:00pm-10:00pm Wednedays & Saturdays\nAGES 13+ 5:30pm-7:00pm Wednesdays & Saturdays\nStarting Nov. 5,  through March 4, 5:30pm Wednesday session ends and 7:00pm Wedcnesday  session will begin at 7:30pm\nLOCATION: Town Building Gym, 41 Cochituate Road",
+        "capacity": "24",
+        "open": "24",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "12/06/2025",
+        "details": "Sat 7:00pm-10:00pm\nAGES: 18+ 7:00pm-10:00pm Wednedays & Saturdays\nAGES 13+ 5:30pm-7:00pm Wednesdays & Saturdays\nStarting Nov. 5,  through March 4, 5:30pm Wednesday session ends and 7:00pm Wedcnesday  session will begin at 7:30pm\nLOCATION: Town Building Gym, 41 Cochituate Road",
+        "capacity": "24",
+        "open": "24",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "12/13/2025",
+        "details": "Sat 5:30pm-7:00pm\nAGES: 18+ 7:00pm-10:00pm Wednedays & Saturdays\nAGES 13+ 5:30pm-7:00pm Wednesdays & Saturdays\nStarting Nov. 5,  through March 4, 5:30pm Wednesday session ends and 7:00pm Wedcnesday  session will begin at 7:30pm\nLOCATION: Town Building Gym, 41 Cochituate Road",
+        "capacity": "24",
+        "open": "24",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "12/13/2025",
+        "details": "Sat 7:00pm-10:00pm\nAGES: 18+ 7:00pm-10:00pm Wednedays & Saturdays\nAGES 13+ 5:30pm-7:00pm Wednesdays & Saturdays\nStarting Nov. 5,  through March 4, 5:30pm Wednesday session ends and 7:00pm Wedcnesday  session will begin at 7:30pm\nLOCATION: Town Building Gym, 41 Cochituate Road",
+        "capacity": "24",
+        "open": "24",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "12/17/2025",
+        "details": "Wed 7:30pm-10:00pm\nAGES: 18+ 7:00pm-10:00pm Wednedays & Saturdays\nAGES 13+ 5:30pm-7:00pm Wednesdays & Saturdays\nStarting Nov. 5,  through March 4, 5:30pm Wednesday session ends and 7:00pm Wedcnesday  session will begin at 7:30pm\nLOCATION: Town Building Gym, 41 Cochituate Road",
+        "capacity": "24",
+        "open": "24",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "12/20/2025",
+        "details": "Sat 5:30pm-7:00pm\nAGES: 18+ 7:00pm-10:00pm Wednedays & Saturdays\nAGES 13+ 5:30pm-7:00pm Wednesdays & Saturdays\nStarting Nov. 5,  through March 4, 5:30pm Wednesday session ends and 7:00pm Wedcnesday  session will begin at 7:30pm\nLOCATION: Town Building Gym, 41 Cochituate Road",
+        "capacity": "24",
+        "open": "24",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "12/20/2025",
+        "details": "Sat 7:00pm-10:00pm\nAGES: 18+ 7:00pm-10:00pm Wednedays & Saturdays\nAGES 13+ 5:30pm-7:00pm Wednesdays & Saturdays\nStarting Nov. 5,  through March 4, 5:30pm Wednesday session ends and 7:00pm Wedcnesday  session will begin at 7:30pm\nLOCATION: Town Building Gym, 41 Cochituate Road",
+        "capacity": "24",
+        "open": "24",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "12/24/2025",
+        "details": "Wed 7:30pm-10:00pm\nAGES: 18+ 7:00pm-10:00pm Wednedays & Saturdays\nAGES 13+ 5:30pm-7:00pm Wednesdays & Saturdays\nStarting Nov. 5,  through March 4, 5:30pm Wednesday session ends and 7:00pm Wedcnesday  session will begin at 7:30pm\nLOCATION: Town Building Gym, 41 Cochituate Road",
+        "capacity": "24",
+        "open": "24",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "12/27/2025",
+        "details": "Sat 5:30pm-7:00pm\nAGES: 18+ 7:00pm-10:00pm Wednedays & Saturdays\nAGES 13+ 5:30pm-7:00pm Wednesdays & Saturdays\nStarting Nov. 5,  through March 4, 5:30pm Wednesday session ends and 7:00pm Wedcnesday  session will begin at 7:30pm\nLOCATION: Town Building Gym, 41 Cochituate Road",
+        "capacity": "24",
+        "open": "24",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "12/27/2025",
+        "details": "Sat 7:00pm-10:00pm\nAGES: 18+ 7:00pm-10:00pm Wednedays & Saturdays\nAGES 13+ 5:30pm-7:00pm Wednesdays & Saturdays\nStarting Nov. 5,  through March 4, 5:30pm Wednesday session ends and 7:00pm Wedcnesday  session will begin at 7:30pm\nLOCATION: Town Building Gym, 41 Cochituate Road",
+        "capacity": "24",
+        "open": "24",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "12/31/2025",
+        "details": "Wed 7:30pm-10:00pm\nAGES: 18+ 7:00pm-10:00pm Wednedays & Saturdays\nAGES 13+ 5:30pm-7:00pm Wednesdays & Saturdays\nStarting Nov. 5,  through March 4, 5:30pm Wednesday session ends and 7:00pm Wedcnesday  session will begin at 7:30pm\nLOCATION: Town Building Gym, 41 Cochituate Road",
+        "capacity": "24",
+        "open": "24",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "01/03/2026",
+        "details": "Sat 5:30pm-7:00pm\nAGES: 18+ 7:00pm-10:00pm Wednedays & Saturdays\nAGES 13+ 5:30pm-7:00pm Wednesdays & Saturdays\nStarting Nov. 5,  through March 4, 5:30pm Wednesday session ends and 7:00pm Wedcnesday  session will begin at 7:30pm\nLOCATION: Town Building Gym, 41 Cochituate Road",
+        "capacity": "24",
+        "open": "24",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "01/10/2026",
+        "details": "Sat 5:30pm-7:00pm\nAGES: 18+ 7:00pm-10:00pm Wednedays & Saturdays\nAGES 13+ 5:30pm-7:00pm Wednesdays & Saturdays\nStarting Nov. 5,  through March 4, 5:30pm Wednesday session ends and 7:00pm Wedcnesday  session will begin at 7:30pm\nLOCATION: Town Building Gym, 41 Cochituate Road",
+        "capacity": "24",
+        "open": "24",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "01/17/2026",
+        "details": "Sat 5:30pm-7:00pm\nAGES: 18+ 7:00pm-10:00pm Wednedays & Saturdays\nAGES 13+ 5:30pm-7:00pm Wednesdays & Saturdays\nStarting Nov. 5,  through March 4, 5:30pm Wednesday session ends and 7:00pm Wedcnesday  session will begin at 7:30pm\nLOCATION: Town Building Gym, 41 Cochituate Road",
+        "capacity": "24",
+        "open": "24",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "01/24/2026",
+        "details": "Sat 5:30pm-7:00pm\nAGES: 18+ 7:00pm-10:00pm Wednedays & Saturdays\nAGES 13+ 5:30pm-7:00pm Wednesdays & Saturdays\nStarting Nov. 5,  through March 4, 5:30pm Wednesday session ends and 7:00pm Wedcnesday  session will begin at 7:30pm\nLOCATION: Town Building Gym, 41 Cochituate Road",
+        "capacity": "24",
+        "open": "24",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "01/31/2026",
+        "details": "Sat 5:30pm-7:00pm\nAGES: 18+ 7:00pm-10:00pm Wednedays & Saturdays\nAGES 13+ 5:30pm-7:00pm Wednesdays & Saturdays\nStarting Nov. 5,  through March 4, 5:30pm Wednesday session ends and 7:00pm Wedcnesday  session will begin at 7:30pm\nLOCATION: Town Building Gym, 41 Cochituate Road",
+        "capacity": "24",
+        "open": "24",
+        "fee": "$ 8.00",
+        "signup_link": "#"
       }
     ]
   },
   {
     "program": "Basketball",
-    "sessions": [
-      {
-        "details": "Mon 6:00pm-8:00pm No commitments, just buckets! Whether you're here to shoot around, run full-court, or just show off your crossover, our drop-in basketball sessions are all about fun, fitness, and friendly competition. Grab your sneakers, and ball. Lets Hoop!",
-        "capacity": "12",
-        "open": "12",
-        "fee": "$ 8.00",
-        "sign_up_action": ""
-      }
-    ]
+    "leagueid": "2340",
+    "sessions": []
   },
   {
     "program": "Drop-In Cricket WRCC",
+    "leagueid": "2353",
     "sessions": [
       {
+        "date": "11/08/2025",
         "details": "Sat 3:00pm-5:30pm",
         "capacity": "15",
         "open": "15",
         "fee": "$ 8.00",
-        "sign_up_action": "GotoSlotRegistration('17062', 'L', '15', 'R')"
+        "signup_link": "#"
+      },
+      {
+        "date": "11/15/2025",
+        "details": "Sat 3:00pm-5:30pm",
+        "capacity": "15",
+        "open": "15",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "11/22/2025",
+        "details": "Sat 3:00pm-5:30pm",
+        "capacity": "15",
+        "open": "15",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "11/29/2025",
+        "details": "Sat 3:00pm-5:30pm",
+        "capacity": "15",
+        "open": "15",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "12/06/2025",
+        "details": "Sat 3:00pm-5:30pm",
+        "capacity": "15",
+        "open": "15",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "12/13/2025",
+        "details": "Sat 3:00pm-5:30pm",
+        "capacity": "15",
+        "open": "15",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "12/20/2025",
+        "details": "Sat 3:00pm-5:30pm",
+        "capacity": "15",
+        "open": "15",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "12/27/2025",
+        "details": "Sat 3:00pm-5:30pm",
+        "capacity": "15",
+        "open": "15",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "01/03/2026",
+        "details": "Sat 3:00pm-5:30pm",
+        "capacity": "15",
+        "open": "15",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "01/10/2026",
+        "details": "Sat 3:00pm-5:30pm",
+        "capacity": "15",
+        "open": "15",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "01/17/2026",
+        "details": "Sat 3:00pm-5:30pm",
+        "capacity": "15",
+        "open": "15",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "01/24/2026",
+        "details": "Sat 3:00pm-5:30pm",
+        "capacity": "15",
+        "open": "15",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "01/31/2026",
+        "details": "Sat 3:00pm-5:30pm",
+        "capacity": "15",
+        "open": "15",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      }
+    ]
+  },
+  {
+    "program": "Pickleball",
+    "leagueid": "2354",
+    "sessions": [
+      {
+        "date": "12/02/2025",
+        "details": "Tue 9:00am-11:00am",
+        "capacity": "10",
+        "open": "10",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "12/05/2025",
+        "details": "Fri 9:00am-11:00am",
+        "capacity": "10",
+        "open": "10",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "12/09/2025",
+        "details": "Tue 9:00am-11:00am",
+        "capacity": "10",
+        "open": "10",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "12/12/2025",
+        "details": "Fri 9:00am-11:00am",
+        "capacity": "10",
+        "open": "10",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "12/16/2025",
+        "details": "Tue 9:00am-11:00am",
+        "capacity": "10",
+        "open": "10",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "12/19/2025",
+        "details": "Fri 9:00am-11:00am",
+        "capacity": "10",
+        "open": "10",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "01/06/2026",
+        "details": "Tue 9:00am-11:00am",
+        "capacity": "10",
+        "open": "10",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "01/09/2026",
+        "details": "Fri 9:00am-11:00am",
+        "capacity": "10",
+        "open": "10",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "01/13/2026",
+        "details": "Tue 9:00am-11:00am",
+        "capacity": "10",
+        "open": "10",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "01/16/2026",
+        "details": "Fri 9:00am-11:00am",
+        "capacity": "10",
+        "open": "10",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "01/20/2026",
+        "details": "Tue 9:00am-11:00am",
+        "capacity": "10",
+        "open": "10",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "01/23/2026",
+        "details": "Fri 9:00am-11:00am",
+        "capacity": "10",
+        "open": "10",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "01/27/2026",
+        "details": "Tue 9:00am-11:00am",
+        "capacity": "10",
+        "open": "10",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "01/30/2026",
+        "details": "Fri 9:00am-11:00am",
+        "capacity": "10",
+        "open": "10",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "02/03/2026",
+        "details": "Tue 9:00am-11:00am",
+        "capacity": "10",
+        "open": "10",
+        "fee": "$ 8.00",
+        "signup_link": "#"
       }
     ]
   },
   {
     "program": "Volleyball",
+    "leagueid": "2274",
     "sessions": [
       {
-        "details": "Fri 12:00pm-2:00pm Ages: 18+ Sundays & Thursdays All welcome! Beginners too! Fridays Women Only*  - Women's height net used.  Intermediate/Advanced level. Location: Town Building Gym, 41 Cochituate Road",
+        "date": "11/07/2025",
+        "details": "Fri 12:00pm-2:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
         "capacity": "12",
-        "open": "6",
+        "open": "5",
         "fee": "$ 8.00",
-        "sign_up_action": ""
+        "signup_link": "#"
+      },
+      {
+        "date": "11/09/2025",
+        "details": "Sun 4:00pm-7:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "13",
+        "open": "13",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "11/13/2025",
+        "details": "Thu 7:30pm-10:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "13",
+        "open": "13",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "11/14/2025",
+        "details": "Fri 12:00pm-2:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "12",
+        "open": "12",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "11/16/2025",
+        "details": "Sun 4:00pm-7:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "13",
+        "open": "13",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "11/20/2025",
+        "details": "Thu 7:30pm-10:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "13",
+        "open": "13",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "11/21/2025",
+        "details": "Fri 12:00pm-2:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "12",
+        "open": "12",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "11/23/2025",
+        "details": "Sun 4:00pm-7:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "13",
+        "open": "13",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "11/27/2025",
+        "details": "Thu 7:30pm-10:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "13",
+        "open": "13",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "11/30/2025",
+        "details": "Sun 4:00pm-7:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "13",
+        "open": "13",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "12/04/2025",
+        "details": "Thu 7:30pm-10:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "13",
+        "open": "13",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "12/05/2025",
+        "details": "Fri 12:00pm-2:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "12",
+        "open": "12",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "12/07/2025",
+        "details": "Sun 4:00pm-7:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "13",
+        "open": "13",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "12/12/2025",
+        "details": "Fri 12:00pm-2:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "12",
+        "open": "12",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "12/14/2025",
+        "details": "Sun 4:00pm-7:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "13",
+        "open": "13",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "12/18/2025",
+        "details": "Thu 7:30pm-10:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "13",
+        "open": "13",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "12/19/2025",
+        "details": "Fri 12:00pm-2:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "12",
+        "open": "12",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "12/21/2025",
+        "details": "Sun 4:00pm-7:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "13",
+        "open": "13",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "12/25/2025",
+        "details": "Thu 7:30pm-10:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "13",
+        "open": "13",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "12/26/2025",
+        "details": "Fri 12:00pm-2:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "12",
+        "open": "12",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "12/28/2025",
+        "details": "Sun 4:00pm-7:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "13",
+        "open": "13",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "01/01/2026",
+        "details": "Thu 7:30pm-10:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "Any",
+        "open": "Any",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "01/02/2026",
+        "details": "Fri 12:00pm-2:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "Any",
+        "open": "Any",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "01/04/2026",
+        "details": "Sun 4:00pm-7:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "Any",
+        "open": "Any",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "01/08/2026",
+        "details": "Thu 7:30pm-10:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "Any",
+        "open": "Any",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "01/09/2026",
+        "details": "Fri 12:00pm-2:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "Any",
+        "open": "Any",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "01/11/2026",
+        "details": "Sun 4:00pm-7:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "Any",
+        "open": "Any",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "01/15/2026",
+        "details": "Thu 7:30pm-10:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "Any",
+        "open": "Any",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "01/16/2026",
+        "details": "Fri 12:00pm-2:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "Any",
+        "open": "Any",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "01/18/2026",
+        "details": "Sun 4:00pm-7:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "Any",
+        "open": "Any",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "01/22/2026",
+        "details": "Thu 7:30pm-10:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "Any",
+        "open": "Any",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "01/23/2026",
+        "details": "Fri 12:00pm-2:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "Any",
+        "open": "Any",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "01/25/2026",
+        "details": "Sun 4:00pm-7:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "Any",
+        "open": "Any",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "01/29/2026",
+        "details": "Thu 7:30pm-10:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "Any",
+        "open": "Any",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "01/30/2026",
+        "details": "Fri 12:00pm-2:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "Any",
+        "open": "Any",
+        "fee": "$ 8.00",
+        "signup_link": "#"
+      },
+      {
+        "date": "02/01/2026",
+        "details": "Sun 4:00pm-7:00pm\nAges: 18+\nSundays & Thursdays\nAll welcome! Beginners too!\nFridays\nWomen Only*  -\nWomen's height net used.  Intermediate/Advanced level.\nLocation:\nTown Building Gym, 41 Cochituate Road",
+        "capacity": "Any",
+        "open": "Any",
+        "fee": "$ 8.00",
+        "signup_link": "#"
       }
     ]
   }
