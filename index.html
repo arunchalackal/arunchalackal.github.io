@@ -66,13 +66,15 @@
     <div class="filters">
       <div class="filter-group">
         <label for="townFilter">Town:</label>
-        <select id="townFilter">
-          <option value="">All</option>
-        </select>
+        <select id="townFilter"><option value="">All</option></select>
       </div>
       <div class="filter-group">
         <label for="zipFilter">Zipcode:</label>
-        <input id="zipFilter" type="text" placeholder="Partial/Full e.g. 01778">
+        <input id="zipFilter" type="text" placeholder="e.g. 01778">
+      </div>
+      <div class="filter-group">
+        <label for="radiusFilter">Radius (miles):</label>
+        <input id="radiusFilter" type="number" min="1" max="100" value="10">
       </div>
       <div class="filter-group">
         <label for="dayFilter">Day of Week:</label>
@@ -95,16 +97,16 @@
     <div id="results" class="sports-grid"></div>
     <div id="emptyMsg" class="empty" style="display:none">No sessions match your filters.</div>
   </div>
+  <script src="zipcode_coords.js"></script>
   <script>
     let allSessions = [];
     let towns = [];
+    // --- Utilities ---
     function extractZip(details) {
-      // Look for a 5-digit zip in details/description.
       const match = details.match(/\b\d{5}\b/);
       return match ? match[0] : "";
     }
     function extractDay(details, date){
-      // Try to extract day from details or date string
       if(date){
         const dt = new Date(date);
         if(String(dt) !== "Invalid Date") return dt.toLocaleDateString('en-US', {weekday:'long'});
@@ -118,16 +120,41 @@
       let match = feeStr.match(/(\d+(\.\d+)?)/);
       return match ? parseFloat(match[1]) : null;
     }
+    function getDistanceInMiles(lat1, lon1, lat2, lon2) {
+      const R = 3958.8; // miles
+      const toRad = deg => deg * Math.PI / 180;
+      const dLat = toRad(lat2-lat1), dLon = toRad(lon2-lon1);
+      const a =
+        Math.sin(dLat/2)**2 + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon/2)**2;
+      return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+    }
+    // --- Filtering Logic ---
     function filterSessions() {
       const town = document.getElementById("townFilter").value;
       const zip = document.getElementById("zipFilter").value.trim();
+      const radius = parseFloat(document.getElementById("radiusFilter").value) || 0;
       const day = document.getElementById("dayFilter").value;
       const maxCost = parseFloat(document.getElementById("maxCostFilter").value);
       const keyword = document.getElementById("searchFilter").value.trim().toLowerCase();
 
       let filtered = allSessions.filter(sess => {
         if(town && sess.town !== town) return false;
-        if(zip && extractZip(sess.details) !== zip && extractZip(sess.details) !== sess.zipcode) return false;
+
+        // --- Radius/ZIP filter ---
+        if(zip && radius) {
+          const sessZip = extractZip(sess.details) || sess.zipcode;
+          if (!zipCoords[zip] || !zipCoords[sessZip]) return false;
+          const d = getDistanceInMiles(
+            zipCoords[zip].lat, zipCoords[zip].lon,
+            zipCoords[sessZip].lat, zipCoords[sessZip].lon
+          );
+          if (d > radius) return false;
+        }
+        else if(zip) {
+          const sessZip = extractZip(sess.details) || sess.zipcode;
+          if (sessZip !== zip) return false;
+        }
+
         if(day && extractDay(sess.details, sess.date) !== day) return false;
         if(maxCost && extractFee(sess.fee) !== null && extractFee(sess.fee) > maxCost) return false;
         if(keyword && !(
@@ -163,18 +190,16 @@
         </div>
       `).join("");
     }
-    fetch('all_towns_sports_sessions.json').then(r=>r.json()).then(data=>{
-      // Add "zipcode" to each session for Zip filter
+    // --- Startup ---
+    fetch('all_towns_adult_sessions.json').then(r=>r.json()).then(data=>{
       allSessions = data.map(sess=>{
         const zip = extractZip(sess.details);
         return {...sess, zipcode: zip};
       });
-      // Populate unique towns
       towns = [...new Set(allSessions.map(s=>s.town).filter(Boolean))].sort();
       const townSel = document.getElementById("townFilter");
       towns.forEach(t=>{let o=document.createElement("option");o.value=o.text=t;townSel.appendChild(o);});
-      // Set up filters
-      ["townFilter","zipFilter","dayFilter","maxCostFilter","searchFilter"].forEach(id=>{
+      ["townFilter","zipFilter","radiusFilter","dayFilter","maxCostFilter","searchFilter"].forEach(id=>{
         document.getElementById(id).addEventListener("input", filterSessions);
         document.getElementById(id).addEventListener("change", filterSessions);
       });
